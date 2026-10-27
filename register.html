@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration - College Fest</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>College Fest 2026</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="results.html">Results</a>
+            <a href="register.html">Register</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+
+        <main>
+
+            <h2>Participant Registration</h2>
+
+            <form>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <br><br>
+
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{10}" required>
+
+                <br><br>
+
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                    min="16" max="60" required>
+
+                <br><br>
+
+
+                <label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="date" required>
+
+                <br><br>
+
+
+                <p>Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+
+                <br><br>
+
+
+                <label for="event">Select Event:</label>
+
+                <select id="event" name="event" required>
+
+                    <option value="">Select an event</option>
+                    <option value="coding">Coding Competition</option>
+                    <option value="quiz">Quiz Competition</option>
+                    <option value="dance">Dance Competition</option>
+                    <option value="singing">Concert Night</option>
+                    <option value="photography">Photography Competition</option>
+
+                </select>
+
+                <br><br>
+
+
+                <p>Skills:</p>
+
+                <input type="checkbox" id="coding" name="skills" value="Coding">
+                <label for="coding">Coding</label>
+
+                <input type="checkbox" id="dance" name="skills" value="Dance">
+                <label for="dance">Dance</label>
+
+                <input type="checkbox" id="music" name="skills" value="Music">
+                <label for="music">Music</label>
+
+                <br><br>
+
+
+                <label for="college">College Name:</label>
+                <input type="text" id="college" name="college" required>
+
+                <br><br>
+
+
+                <label for="website">Portfolio Website:</label>
+                <input type="url" id="website" name="website">
+
+                <br><br>
+
+
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo">
+
+                <br><br>
+
+
+                <label for="message">Why do you want to participate?</label>
+                <br>
+                <textarea id="message" name="message"
+                        rows="5" cols="40" required></textarea>
+
+                <br><br>
+
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                    I agree to the terms and conditions
+                </label>
+
+                <br><br>
+
+
+                <input type="submit" value="Submit Registration">
+
+                <input type="reset" value="Reset Form">
+
+            </form>
+
+        </main>
+
+        <footer>
+            <p>College Fest 2026</p>
+        </footer>
+
+    </body>
+</html>
